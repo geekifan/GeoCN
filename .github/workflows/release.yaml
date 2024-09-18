@@ -24,6 +24,7 @@ jobs:
         git branch -D release || true
         git checkout --orphan release
         git add GeoCN.txt
+        git add update-geoip.rsc
         git config --local user.name "github-actions[bot]"
         git config --local user.email ""
         git commit -m "built on $(date)"
